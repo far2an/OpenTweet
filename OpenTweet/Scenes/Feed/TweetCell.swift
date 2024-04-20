@@ -34,7 +34,7 @@ final class TweetCell: UICollectionViewCell, NibLoadable {
         imageView.setImage(with: viewModel.imageURL)
         usernameLabel.text = viewModel.username
         dateLabel.text = viewModel.date.string(using: .tweetDateFormatter).appendSeparator()
-        contentLabel.text = viewModel.content
+        contentLabel.attributedText = viewModel.content.updateArrtibutes()
     }
 }
 
