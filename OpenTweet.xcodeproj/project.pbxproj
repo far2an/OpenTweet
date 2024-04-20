@@ -125,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				009C4C6B1D9F0CD600F0BC6C /* AppDelegate.swift */,
+				009C4C6F1D9F0CD600F0BC6C /* Main.storyboard */,
 				B24E8C192BD3BE9900B15535 /* Scenes */,
 				B24E8C1E2BD3BFE900B15535 /* Helpers */,
 				B24E8C1D2BD3BFD600B15535 /* Services */,
@@ -201,7 +202,6 @@
 				B24E8C372BD3E5AD00B15535 /* TweetCell.xib */,
 				B24E8C2A2BD3DDB400B15535 /* FeedViewModel.swift */,
 				009C4C6D1D9F0CD600F0BC6C /* TimelineViewController.swift */,
-				009C4C6F1D9F0CD600F0BC6C /* Main.storyboard */,
 			);
 			path = Feed;
 			sourceTree = "<group>";

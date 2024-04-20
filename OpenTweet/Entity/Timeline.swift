@@ -26,7 +26,11 @@ extension Timeline {
 extension Timeline {
     func convert() -> TimelineViewModel {
         TimelineViewModel(tweets: tweets.map {
-            TweetViewModel(username: $0.author, date: $0.dateString.date(), content: $0.content, imageURL: $0.avatar)
+            TweetViewModel(id: $0.id,
+                           username: $0.author,
+                           date: $0.dateString.date(),
+                           content: $0.content,
+                           imageURL: $0.avatar)
         })
     }
 }

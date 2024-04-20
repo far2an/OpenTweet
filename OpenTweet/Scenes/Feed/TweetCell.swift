@@ -9,6 +9,7 @@
 import UIKit
 
 struct TweetViewModel {
+    var id: String
     var username: String
     var date: Date
     var content: String

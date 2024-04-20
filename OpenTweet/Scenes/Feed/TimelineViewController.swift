@@ -16,11 +16,11 @@ class TimelineViewController: UIViewController {
         }
     }
     
-    let viewModel: FeedViewModelProtocol = FeedViewModel()
+    var viewModel: FeedViewModelProtocol = FeedViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.fetchTimeline()
+        fetchTimeline()
     }
 }
 
@@ -32,6 +32,14 @@ private extension TimelineViewController {
             }
             return self.tweetSection(for: layoutEnvironment)
         }
+    }
+    
+    func fetchTimeline() {
+        guard viewModel.timeline.tweets.isEmpty else {
+            return
+        }
+            
+        viewModel.fetchTimeline()
     }
     
     func configureDataSourceCellProviders() {
@@ -49,6 +57,14 @@ private extension TimelineViewController {
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         return NSCollectionLayoutSection(group: group)
     }
+    
+    func navigateToThread(with timeline: TimelineViewModel) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "TimelineViewController") as! TimelineViewController
+        vc.title = "Thread"
+        vc.viewModel = FeedViewModel(timeline: timeline)
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension TimelineViewController: UICollectionViewDataSource, UICollectionViewDelegate {
@@ -65,6 +81,11 @@ extension TimelineViewController: UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! TweetCell
         cell.animate(type: .expand)
+        
+        guard let viewModel = viewModel.tweetTapped(with: viewModel.timeline.tweets[indexPath.item].id) else {
+            return
+        }
+        navigateToThread(with: viewModel)
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
