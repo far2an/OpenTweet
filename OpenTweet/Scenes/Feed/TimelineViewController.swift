@@ -12,6 +12,7 @@ class TimelineViewController: UIViewController {
             collectionView.collectionViewLayout = collectionViewLayout
             collectionView.delegate = self
             collectionView.dataSource = self
+            collectionView.allowsMultipleSelection = false
         }
     }
     
@@ -62,7 +63,13 @@ extension TimelineViewController: UICollectionViewDataSource, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let cell = collectionView.cellForItem(at: indexPath) as! TweetCell
+        cell.animate(type: .expand)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! TweetCell
+        cell.animate(type: .shrink)
     }
 }
 

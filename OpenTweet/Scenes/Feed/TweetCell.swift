@@ -15,6 +15,11 @@ struct TweetViewModel {
     var imageURL: URL?
 }
 
+enum AnimationType {
+    case expand
+    case shrink
+}
+
 final class TweetCell: UICollectionViewCell, NibLoadable {
     @IBOutlet private var imageView: UIImageView! {
         didSet {
@@ -26,6 +31,8 @@ final class TweetCell: UICollectionViewCell, NibLoadable {
     @IBOutlet private var dateLabel: UILabel!
     @IBOutlet private var contentLabel: UILabel!
     
+    let animator = UIViewPropertyAnimator(duration: 0.5, curve: .easeInOut)
+    
     override func prepareForReuse() {
         imageView.image = nil
     }
@@ -35,6 +42,28 @@ final class TweetCell: UICollectionViewCell, NibLoadable {
         usernameLabel.text = viewModel.username
         dateLabel.text = viewModel.date.string(using: .tweetDateFormatter).appendSeparator()
         contentLabel.attributedText = viewModel.content.updateArrtibutes()
+    }
+    
+    func animate(type: AnimationType) {
+        if animator.isRunning {
+            animator.stopAnimation(true)
+        }
+        
+        switch type {
+        case .expand:
+            let shouldExpand = self.transform == .identity
+            animator.addAnimations {
+                self.transform = shouldExpand ? CGAffineTransform(scaleX: 1.05, y: 1.05) : .identity
+                self.backgroundColor = shouldExpand ? .systemGray6 : nil
+            }
+        case .shrink:
+            animator.addAnimations {
+                self.transform = .identity
+                self.backgroundColor = nil
+            }
+        }
+        
+        animator.startAnimation()
     }
 }
 
