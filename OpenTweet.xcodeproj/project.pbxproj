@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,17 @@
 		009C4C811D9F0CD600F0BC6C /* OpenTweetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009C4C801D9F0CD600F0BC6C /* OpenTweetTests.swift */; };
 		009C4C8C1D9F0CD600F0BC6C /* OpenTweetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009C4C8B1D9F0CD600F0BC6C /* OpenTweetUITests.swift */; };
 		009C4C9B1D9F0D4100F0BC6C /* timeline.json in Resources */ = {isa = PBXBuildFile; fileRef = 009C4C9A1D9F0D4100F0BC6C /* timeline.json */; };
+		B24E8C222BD3DB4600B15535 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E8C212BD3DB4600B15535 /* Tweet.swift */; };
+		B24E8C242BD3DC3100B15535 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E8C232BD3DC3100B15535 /* UIImageView+Extensions.swift */; };
+		B24E8C262BD3DC4B00B15535 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E8C252BD3DC4B00B15535 /* String+Extensions.swift */; };
+		B24E8C292BD3DD3500B15535 /* Bundle+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E8C282BD3DD3500B15535 /* Bundle+Decode.swift */; };
+		B24E8C2B2BD3DDB400B15535 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E8C2A2BD3DDB400B15535 /* FeedViewModel.swift */; };
+		B24E8C2D2BD3DE1500B15535 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E8C2C2BD3DE1500B15535 /* NetworkService.swift */; };
+		B24E8C302BD3E01F00B15535 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E8C2F2BD3E01F00B15535 /* Timeline.swift */; };
+		B24E8C382BD3E5AD00B15535 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24E8C372BD3E5AD00B15535 /* TweetCell.xib */; };
+		B24E8C392BD3E5AD00B15535 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E8C362BD3E5AD00B15535 /* TweetCell.swift */; };
+		B24E8C3B2BD3ED7500B15535 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E8C3A2BD3ED7500B15535 /* Date+Extensions.swift */; };
+		B24E8C402BD3F66000B15535 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E8C3F2BD3F66000B15535 /* Identifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +61,17 @@
 		009C4C8D1D9F0CD600F0BC6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		009C4C9A1D9F0D4100F0BC6C /* timeline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timeline.json; sourceTree = "<group>"; };
 		009C4C9D1D9F104800F0BC6C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B24E8C212BD3DB4600B15535 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		B24E8C232BD3DC3100B15535 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		B24E8C252BD3DC4B00B15535 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		B24E8C282BD3DD3500B15535 /* Bundle+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decode.swift"; sourceTree = "<group>"; };
+		B24E8C2A2BD3DDB400B15535 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		B24E8C2C2BD3DE1500B15535 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B24E8C2F2BD3E01F00B15535 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		B24E8C362BD3E5AD00B15535 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		B24E8C372BD3E5AD00B15535 /* TweetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetCell.xib; sourceTree = "<group>"; };
+		B24E8C3A2BD3ED7500B15535 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		B24E8C3F2BD3F66000B15535 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +125,12 @@
 			isa = PBXGroup;
 			children = (
 				009C4C6B1D9F0CD600F0BC6C /* AppDelegate.swift */,
-				009C4C6D1D9F0CD600F0BC6C /* TimelineViewController.swift */,
-				009C4C6F1D9F0CD600F0BC6C /* Main.storyboard */,
-				009C4C741D9F0CD600F0BC6C /* LaunchScreen.storyboard */,
-				009C4C721D9F0CD600F0BC6C /* Assets.xcassets */,
-				009C4C771D9F0CD600F0BC6C /* Info.plist */,
+				B24E8C192BD3BE9900B15535 /* Scenes */,
+				B24E8C1E2BD3BFE900B15535 /* Helpers */,
+				B24E8C1D2BD3BFD600B15535 /* Services */,
+				B24E8C272BD3DC8100B15535 /* Entity */,
+				B24E8C172BD3BE4700B15535 /* Supporting Files */,
+				B24E8C162BD3BE0A00B15535 /* Assets */,
 			);
 			path = OpenTweet;
 			sourceTree = "<group>";
@@ -136,6 +159,80 @@
 				009C4C9A1D9F0D4100F0BC6C /* timeline.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		B24E8C162BD3BE0A00B15535 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				009C4C721D9F0CD600F0BC6C /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B24E8C172BD3BE4700B15535 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				009C4C771D9F0CD600F0BC6C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B24E8C192BD3BE9900B15535 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B24E8C1C2BD3BFB700B15535 /* Feed */,
+				B24E8C1A2BD3BF9C00B15535 /* LaunchScreen */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B24E8C1A2BD3BF9C00B15535 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				009C4C741D9F0CD600F0BC6C /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		B24E8C1C2BD3BFB700B15535 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				B24E8C362BD3E5AD00B15535 /* TweetCell.swift */,
+				B24E8C372BD3E5AD00B15535 /* TweetCell.xib */,
+				B24E8C2A2BD3DDB400B15535 /* FeedViewModel.swift */,
+				009C4C6D1D9F0CD600F0BC6C /* TimelineViewController.swift */,
+				009C4C6F1D9F0CD600F0BC6C /* Main.storyboard */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		B24E8C1D2BD3BFD600B15535 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B24E8C2C2BD3DE1500B15535 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B24E8C1E2BD3BFE900B15535 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B24E8C232BD3DC3100B15535 /* UIImageView+Extensions.swift */,
+				B24E8C252BD3DC4B00B15535 /* String+Extensions.swift */,
+				B24E8C3A2BD3ED7500B15535 /* Date+Extensions.swift */,
+				B24E8C282BD3DD3500B15535 /* Bundle+Decode.swift */,
+				B24E8C3F2BD3F66000B15535 /* Identifiable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B24E8C272BD3DC8100B15535 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B24E8C212BD3DB4600B15535 /* Tweet.swift */,
+				B24E8C2F2BD3E01F00B15535 /* Timeline.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +297,9 @@
 		009C4C601D9F0CD600F0BC6C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1530;
 				ORGANIZATIONNAME = "OpenTable, Inc.";
 				TargetAttributes = {
 					009C4C671D9F0CD600F0BC6C = {
@@ -249,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				009C4C9B1D9F0D4100F0BC6C /* timeline.json in Resources */,
+				B24E8C382BD3E5AD00B15535 /* TweetCell.xib in Resources */,
 				009C4C761D9F0CD600F0BC6C /* LaunchScreen.storyboard in Resources */,
 				009C4C731D9F0CD600F0BC6C /* Assets.xcassets in Resources */,
 				009C4C711D9F0CD600F0BC6C /* Main.storyboard in Resources */,
@@ -276,8 +375,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B24E8C302BD3E01F00B15535 /* Timeline.swift in Sources */,
+				B24E8C402BD3F66000B15535 /* Identifiable.swift in Sources */,
+				B24E8C3B2BD3ED7500B15535 /* Date+Extensions.swift in Sources */,
+				B24E8C2B2BD3DDB400B15535 /* FeedViewModel.swift in Sources */,
+				B24E8C262BD3DC4B00B15535 /* String+Extensions.swift in Sources */,
+				B24E8C2D2BD3DE1500B15535 /* NetworkService.swift in Sources */,
+				B24E8C222BD3DB4600B15535 /* Tweet.swift in Sources */,
 				009C4C6E1D9F0CD600F0BC6C /* TimelineViewController.swift in Sources */,
 				009C4C6C1D9F0CD600F0BC6C /* AppDelegate.swift in Sources */,
+				B24E8C392BD3E5AD00B15535 /* TweetCell.swift in Sources */,
+				B24E8C242BD3DC3100B15535 /* UIImageView+Extensions.swift in Sources */,
+				B24E8C292BD3DD3500B15535 /* Bundle+Decode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -369,6 +479,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -397,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -430,6 +542,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -441,7 +554,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -452,9 +566,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QPU8QS3E62;
-				INFOPLIST_FILE = OpenTweet/Info.plist;
+				INFOPLIST_FILE = "OpenTweet/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.OpenTweet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -466,9 +583,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QPU8QS3E62;
-				INFOPLIST_FILE = OpenTweet/Info.plist;
+				INFOPLIST_FILE = "OpenTweet/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.OpenTweet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -483,7 +603,11 @@
 				DEVELOPMENT_TEAM = QPU8QS3E62;
 				INFOPLIST_FILE = OpenTweetTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.OpenTweetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -499,7 +623,11 @@
 				DEVELOPMENT_TEAM = QPU8QS3E62;
 				INFOPLIST_FILE = OpenTweetTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.OpenTweetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -514,7 +642,11 @@
 				DEVELOPMENT_TEAM = QPU8QS3E62;
 				INFOPLIST_FILE = OpenTweetUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.OpenTweetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -529,7 +661,11 @@
 				DEVELOPMENT_TEAM = QPU8QS3E62;
 				INFOPLIST_FILE = OpenTweetUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.OpenTweetUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
